@@ -1,0 +1,1 @@
+# Contenedores y servicios orquestados con Docker Compose. Ideal para despliegues rápidos en entornos de laboratorio.

@@ -1,0 +1,1 @@
+Biblioteca de scripts (PowerShell/Bash) para automatización de tareas administrativas, gestión de usuarios y mantenimiento del sistema.
