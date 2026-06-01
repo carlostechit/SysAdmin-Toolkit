@@ -2,11 +2,11 @@ services:
   filebrowser:
     image: filebrowser/filebrowser
     container_name: filebrowser
+    command: -d /config/database.db
     ports:
       - "8080:80"
     volumes:
       - ./data:/srv
       - ./config:/config
-      - ./database.db:/database.db
     
     restart: unless-stopped
