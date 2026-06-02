@@ -19,3 +19,4 @@ networks:
   toolkit_net:
     name: toolkit_net
     driver: bridge
+    external: true
