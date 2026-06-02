@@ -1,0 +1,13 @@
+# Logs
+*.log
+*.sqlite
+*.db
+
+# Directorios de datos y configuraciones persistentes
+**/data/
+**/config/
+**/letsencrypt/
+
+# Otros archivos basura
+.DS_Store
+.env

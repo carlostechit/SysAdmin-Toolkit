@@ -3,10 +3,15 @@ services:
     image: filebrowser/filebrowser
     container_name: filebrowser
     command: -d /config/database.db
-    ports:
-      - "8080:80"
     volumes:
       - ./data:/srv
       - ./config:/config
     
     restart: unless-stopped
+    networks:
+      - toolkit_net
+      
+networks:
+  toolkit_net:
+    external: true
+    name: toolkit_net

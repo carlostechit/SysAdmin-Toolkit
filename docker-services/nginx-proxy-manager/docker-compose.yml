@@ -1,0 +1,21 @@
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:2.15.0'
+    container_name: npm
+    restart: unless-stopped
+    environment:
+      TZ: "Europe/Madrid"
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    networks:
+      - toolkit_net
+
+networks:
+  toolkit_net:
+    name: toolkit_net
+    driver: bridge
